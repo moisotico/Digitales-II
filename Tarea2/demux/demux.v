@@ -7,6 +7,10 @@ module demux(
     //selector (using internal signal)
     reg s = 'b0;
 
+    //set exits to 0
+    initial data_out0 = 'b0;
+    initial data_out1 = 'b0;
+    
     //using non-blocking asignation on positive edge    
     always@(posedge clk) begin
         s <= ~s; 
