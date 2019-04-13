@@ -1,0 +1,20 @@
+# read design 
+read_verilog    src/demux.v       
+
+# elaborate design hierarchy
+hierarchy -check -top demux
+
+# the high-level stuff
+proc; opt; fsm; opt; memory; opt
+
+# mapping to internal cell library
+techmap; opt
+
+# mapping flip-flops to mycells.lib
+dfflibmap -liberty lib/cmos_cells.lib
+
+# mapping logic to mycells.lib
+abc -liberty lib/cmos_cells.lib
+
+# cleanup
+clean
