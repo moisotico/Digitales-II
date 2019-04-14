@@ -1,5 +1,5 @@
 # read design 
-read_verilog src/demux.v                  
+read_verilog src/demux.v                                                          
 
 # elaborate design hierarchy
 hierarchy -check -top demux
@@ -20,4 +20,4 @@ abc -liberty lib/cmos_cells.lib
 clean
 
 # write synthesized design
-write_verilog src/yosys_demux.v           
+write_verilog src/yosys_demux.v                                                   

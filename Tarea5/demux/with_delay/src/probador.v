@@ -12,15 +12,15 @@ module probador( //testbench: signal generator and data monitor
          @(posedge clk);
          reset_L <= 1;                          //set reset to 1 to start the demux
          
-         repeat(12)begin                        //run for first 10 cycles of the clock
+         repeat(20)begin                        //run for first 10 cycles of the clock
              @(posedge clk);
-             data_in <= $random % 16;           //use $urandom or $random 
+             //data_in <= $random % 16;           //use $urandom or $random 
          end
 
-         repeat(3)begin
+         repeat(10)begin
              @(posedge clk);
              reset_L <= 0;
-             data_in <= $random % 16;           //use $urandom or $random
+             //data_in <= $random % 16;           //use $urandom or $random
          end
          
          @(posedge clk);
@@ -29,6 +29,7 @@ module probador( //testbench: signal generator and data monitor
      end
     
     always  #2 clk  <= ~clk;                    //"Toggle" each 2*10ns
+    always  #20 data_in <= $random % 16;
     initial clk <= 0;
     initial data_in <= 'b0;    
 endmodule
