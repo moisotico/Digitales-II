@@ -10,8 +10,6 @@ module demux(
 
     //using non-blocking asignation on positive edge    
     always@(*) begin
-        //valid logic
-        //b = (enable) ? a : 1'bz;
 
         //reset logic
         if (reset_L == 0) begin
@@ -23,14 +21,24 @@ module demux(
         //demux logic 
         else begin                           //when reset_L is activated
             if (s==0) begin
-                data_out0 = data_in;
+                if (valid_in == 0) begin
+                    data_out0 = 1'bz;   //valid_in logic
+                end
+                else begin
+                    data_out0 = data_in;
+                end
                 data_out1 = 0;
                 #5 s = ~s; 
-            end
-
+            end     
+            
             else begin                       // demux to data_out1
                 data_out0 = 0;
-                data_out1 = data_in;
+                if (valid_in == 0) begin
+                    data_out1 = 1'bz;   //valid_in logic
+                end
+                else begin
+                    data_out1 = data_in;
+                end
                 #5 s = ~s; 
             end
         end
