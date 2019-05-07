@@ -1,0 +1,314 @@
+$date
+	Sun May  5 13:37:24 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BUF $end
+$var wire 1 ! A $end
+$var wire 1 " Y $end
+$upscope $end
+$scope module DFF $end
+$var wire 1 # C $end
+$var wire 1 $ D $end
+$var reg 1 % Q $end
+$upscope $end
+$scope module DFFSR $end
+$var wire 1 & C $end
+$var wire 1 ' D $end
+$var wire 1 ( R $end
+$var wire 1 ) S $end
+$var reg 1 * Q $end
+$upscope $end
+$scope module NAND $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 - Y $end
+$upscope $end
+$scope module NOR $end
+$var wire 1 . A $end
+$var wire 1 / B $end
+$var wire 1 0 Y $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 1 A $end
+$var wire 1 2 Y $end
+$upscope $end
+$scope module TestBench $end
+$var wire 1 3 reset_L $end
+$var wire 4 4 data_out1 [3:0] $end
+$var wire 4 5 data_out0 [3:0] $end
+$var wire 4 6 data_in [3:0] $end
+$var wire 1 7 clk $end
+$scope module dmux $end
+$var wire 1 3 reset_L $end
+$var wire 4 8 data_in [3:0] $end
+$var wire 1 7 clk $end
+$var reg 4 9 data_out0 [3:0] $end
+$var reg 4 : data_out1 [3:0] $end
+$var reg 1 ; s $end
+$upscope $end
+$scope module probador $end
+$var wire 4 < data_out0 [3:0] $end
+$var wire 4 = data_out1 [3:0] $end
+$var reg 1 7 clk $end
+$var reg 4 > data_in [3:0] $end
+$var reg 1 3 reset_L $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 >
+b0 =
+b0 <
+0;
+b0 :
+b0 9
+b0 8
+07
+b0 6
+b0 5
+b0 4
+03
+z2
+z1
+x0
+z/
+z.
+x-
+z,
+z+
+x*
+z)
+z(
+z'
+z&
+x%
+z$
+z#
+z"
+z!
+$end
+#20
+13
+17
+#40
+07
+#60
+17
+#70
+1;
+#80
+07
+#100
+b100 4
+b100 :
+b100 =
+17
+b100 6
+b100 8
+b100 >
+#120
+07
+#140
+17
+#150
+0;
+#160
+07
+#180
+17
+#200
+b0 4
+b0 :
+b0 =
+b1 5
+b1 9
+b1 <
+07
+b1 6
+b1 8
+b1 >
+#220
+17
+#240
+07
+#250
+1;
+#260
+17
+#280
+07
+#300
+b1001 4
+b1001 :
+b1001 =
+b0 5
+b0 9
+b0 <
+17
+b1001 6
+b1001 8
+b1001 >
+#320
+07
+#340
+17
+#350
+0;
+#360
+07
+#380
+17
+#400
+b0 4
+b0 :
+b0 =
+b11 5
+b11 9
+b11 <
+07
+b11 6
+b11 8
+b11 >
+#420
+17
+#440
+07
+#450
+1;
+#460
+17
+#480
+07
+#500
+b1101 4
+b1101 :
+b1101 =
+b0 5
+b0 9
+b0 <
+17
+b1101 6
+b1101 8
+b1101 >
+#520
+07
+#540
+17
+#550
+0;
+#560
+07
+#580
+17
+#600
+07
+#620
+17
+#640
+07
+#660
+17
+#680
+07
+#700
+b0 4
+b0 :
+b0 =
+b101 5
+b101 9
+b101 <
+17
+b101 6
+b101 8
+b101 >
+#720
+07
+#740
+17
+#750
+1;
+#760
+07
+#780
+17
+#800
+b10 4
+b10 :
+b10 =
+b0 5
+b0 9
+b0 <
+07
+b10 6
+b10 8
+b10 >
+#820
+17
+#840
+07
+#850
+0;
+#860
+b0 4
+b0 :
+b0 =
+03
+17
+#880
+07
+#900
+17
+b1 6
+b1 8
+b1 >
+#920
+07
+#940
+17
+#960
+07
+#980
+17
+#1000
+07
+b1101 6
+b1101 8
+b1101 >
+#1020
+17
+#1040
+07
+#1060
+17
+#1080
+07
+#1100
+17
+b110 6
+b110 8
+b110 >
+#1120
+07
+#1140
+17
+#1160
+07
+#1180
+17
+#1200
+07
+b1101 6
+b1101 8
+b1101 >
+#1220
+17
+#1240
+07
+#1260
+17
