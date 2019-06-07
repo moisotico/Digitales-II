@@ -10,11 +10,12 @@ YS = yosy.ys
 
 # Tags de Variables de modulo con valores por defecto 
 TOP_NAME := contador_gray_cond
-TARGET_TOP := contador_gray_cond.v
-TARGET_VIS := contador_gray_cond.vcd
+TARGET_TOP := testbench.v
+TARGET_VIS := contador_gray.vcd
+GTK_CONFIG := config.gtkw
 OUTPUT_SIM := contador.out
 export LIB := CMOS/cmos_cells.lib
-export VLOG_FILE_NAME := contador_gray_cond.v
+export VLOG_FILE_NAME := testbench.v
 NEW_VLOG_FILE_NAME = $(TOP_NAME)_synth.v
 export TOP_MODULE := $(TOP_NAME) 
 NEW_TOP_MODULE = $(TOP_NAME)_synth
@@ -22,13 +23,13 @@ export OUTPUT_SYNTH = $(TOP_NAME)_synth.v
 
 .PHONY: clean
 
-#autoinst_verilog: 
-#	emacs-tealeg --batch --no-site-file -l verilog-mode.el tb.v -f verilog-auto -f save-buffer
+autoinst_verilog: 
+	emacs --batch --no-site-file -l verilog-mode.el probador.v checker.v -f verilog-auto -f save-buffer
 
 assign_testbench:
 	$(eval TARGET_TOP = testbench.v)
 
-all: compile clean
+all: compile run sim clean
 	$(MAKE) testbench
 	@echo 'All Done'
 
@@ -42,7 +43,7 @@ run:
 
 sim: 
 	@echo 'Show simulation on GTKWave $(TARGET_VIS)'
-	$(VISUAL) $(TARGET_VIS) &
+	$(VISUAL) $(TARGET_VIS) $(GTK_CONFIG)
 
 #synth:
 #	@echo 'Synthetizing module $(TOP_MODULE) with $(LIB)'

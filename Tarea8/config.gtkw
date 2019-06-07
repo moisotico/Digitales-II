@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Fri Jun  7 23:10:14 2019
+[*]
+[dumpfile] "/home/moi/Documents/Digitales_II/Tarea8/contador_gray.vcd"
+[dumpfile_mtime] "Fri Jun  7 23:07:50 2019"
+[dumpfile_size] 30406
+[savefile] "/home/moi/Documents/Digitales_II/Tarea8/config.gtkw"
+[timestart] 192100
+[size] 1853 1016
+[pos] -1 -1
+*-14.939500 286000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 233
+[signals_width] 222
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@200
+-Entradas
+@28
+testbench.clk
+testbench.enable
+testbench.reset_L
+@200
+-Modelo Conductual
+@22
+testbench.contador_con.counter[4:0]
+@24
+testbench.contador_con.counter[4:0]
+@22
+testbench.salida_gray_cond[4:0]
+@200
+-Modelo a verificar
+@22
+testbench.contador_est.count[4:0]
+@24
+testbench.contador_est.count[4:0]
+@22
+testbench.salida_gray_estruct[4:0]
+@200
+-Checker
+@28
+testbench.test0.gray_checks_out
+[pattern_trace] 1
+[pattern_trace] 0
