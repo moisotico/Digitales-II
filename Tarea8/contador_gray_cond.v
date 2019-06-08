@@ -9,7 +9,7 @@ module contador_gray_cond(
 
     //SIZE: amount counted before it resets
     parameter SIZE = 32;
-
+    integer iteracion = 1;
     always@(posedge clk)begin
 
         //resets the main 5 {0 to 4} bits
@@ -21,6 +21,7 @@ module contador_gray_cond(
                 counter <= counter + 1;
             end else begin
                 counter <= 'b0;
+                iteracion <= iteracion + 1;
             end
         end
     end

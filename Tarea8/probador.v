@@ -46,7 +46,7 @@ module probador(
         enable <= 1;
         reset_L <= 1;
         
-        repeat(96) begin
+        repeat(596) begin
         @(posedge clk);
         //count <= count + 1;
         end

@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Sat Jun  8 02:18:46 2019
+[*] Sat Jun  8 03:56:14 2019
 [*]
 [dumpfile] "/home/moi/Documents/Digitales_II/Tarea8/contador_gray.vcd"
-[dumpfile_mtime] "Sat Jun  8 00:04:04 2019"
-[dumpfile_size] 30614
+[dumpfile_mtime] "Sat Jun  8 03:53:13 2019"
+[dumpfile_size] 134714
 [savefile] "/home/moi/Documents/Digitales_II/Tarea8/config.gtkw"
-[timestart] 181300
+[timestart] 252060
 [size] 1853 1016
 [pos] -1 -1
-*-14.939500 293900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-13.274196 290000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testbench.
 [sst_width] 48
 [signals_width] 222
@@ -23,23 +23,23 @@ testbench.enable
 testbench.reset_L
 @200
 -Modelo Conductual
-@22
-testbench.contador_con.counter[4:0]
 @24
 testbench.contador_con.counter[4:0]
 @22
+testbench.contador_con.counter[4:0]
 testbench.salida_gray_cond[4:0]
 @200
 -Modelo a verificar
-@22
-testbench.contador_est.count[4:0]
 @24
 testbench.contador_est.count[4:0]
 @22
+testbench.contador_est.count[4:0]
 testbench.salida_gray_estruct[4:0]
 @200
 -Checker
-@28
+@29
 testbench.test0.gray_checks_out
+@420
+testbench.contador_con.iteracion
 [pattern_trace] 1
 [pattern_trace] 0
