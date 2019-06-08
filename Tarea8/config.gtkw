@@ -1,19 +1,19 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Fri Jun  7 23:10:14 2019
+[*] Sat Jun  8 02:18:46 2019
 [*]
 [dumpfile] "/home/moi/Documents/Digitales_II/Tarea8/contador_gray.vcd"
-[dumpfile_mtime] "Fri Jun  7 23:07:50 2019"
-[dumpfile_size] 30406
+[dumpfile_mtime] "Sat Jun  8 00:04:04 2019"
+[dumpfile_size] 30614
 [savefile] "/home/moi/Documents/Digitales_II/Tarea8/config.gtkw"
-[timestart] 192100
+[timestart] 181300
 [size] 1853 1016
 [pos] -1 -1
-*-14.939500 286000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-14.939500 293900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testbench.
-[sst_width] 233
+[sst_width] 48
 [signals_width] 222
-[sst_expanded] 1
+[sst_expanded] 0
 [sst_vpaned_height] 288
 @200
 -Entradas

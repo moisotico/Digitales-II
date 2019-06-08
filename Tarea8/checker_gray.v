@@ -14,22 +14,27 @@ module checker_gray(
     input   [4:0]   salida_gray_e
 );
     reg     out_c, out_e;                   //flip-flops
-
-    always@(  * /*posedge clk*/ ) begin
+    reg     onflag, resetflag;                         //checks if message has been sent   
+    always@( * ) begin
         if( !reset_L ) begin
-            out_c = 'b0;
-            out_e = 'b0;
+            out_c  =   'b0;
+            out_e  =   'b0;
+            onflag =   'b0;
             gray_checks_out <= 1;
         end else begin      
             out_c = salida_gray_c;
             out_e = salida_gray_e;
            
             if( reset_L == 1 ) begin        //comparacion en los flancos del reloj
-                if( out_c==out_e ) begin
+                if( out_c == out_e ) begin
                     gray_checks_out = 1;
+                    resetflag =1; 
                 end else begin
                     gray_checks_out = 'b0;
-                    $display( $time, " ns, Error: Modules differ!!" );
+                    if ( ( !onflag )  && ( resetflag == 1 ) ) begin
+                        $display( $time, " ns, Error: Modules differ!!" );
+                        onflag = 1;
+                    end
                 end
             end 
         end

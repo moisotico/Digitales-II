@@ -29,7 +29,7 @@ autoinst_verilog:
 assign_testbench:
 	$(eval TARGET_TOP = testbench.v)
 
-all: compile run sim clean
+all: 
 	$(MAKE) testbench
 	@echo 'All Done'
 
