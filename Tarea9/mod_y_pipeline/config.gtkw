@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Mon Jun 24 07:50:07 2019
+[*]
+[dumpfile] "/home/moi/Documents/Digitales_II/Tarea9/mod_y_pipeline/sumador.vcd"
+[dumpfile_mtime] "Mon Jun 24 07:38:37 2019"
+[dumpfile_size] 21745
+[savefile] "/home/moi/Documents/Digitales_II/Tarea9/mod_y_pipeline/config.gtkw"
+[timestart] 0
+[size] 1853 1016
+[pos] -1 -1
+*-13.594015 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[treeopen] testbench.sumador_con.
+[sst_width] 233
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@200
+-Entradas
+@28
+testbench.sumador_con.clk
+testbench.sumador_con.reset_L
+@200
+-Etapa 1
+@22
+testbench.sumador_con.dataA[3:0]
+testbench.sumador_con.dataB[3:0]
+testbench.sumador_con.idx[3:0]
+testbench.sumador_con.pipeline.sum10_d[3:0]
+@200
+-Etapa 2
+@29
+testbench.sumador_con.pipeline.acarreo_d
+@22
+testbench.sumador_con.idx_d[3:0]
+testbench.sumador_con.pipeline.data_A_d[3:0]
+testbench.sumador_con.pipeline.data_B_d[3:0]
+testbench.sumador_con.pipeline.sum30_d[3:0]
+@200
+-Salidas
+@22
+testbench.idx_dd_cond[3:0]
+testbench.idx_dd_estruc[3:0]
+testbench.test0.sum30_dd_cond[3:0]
+testbench.sum30_dd_estruc[3:0]
+@200
+-Checker
+@28
+testbench.test0.sumador_checks_out
+[pattern_trace] 1
+[pattern_trace] 0
