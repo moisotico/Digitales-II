@@ -6,7 +6,9 @@ Se diseña un testbench, un probador con verificador automático y una descripci
 conductual y estructural del sumador con pipeline en Verilog.
 
 ## Para ejecutar:
+En el directorio donde se hace `git clone` 
 ```
+$cd mod_y_pipeline
 $ make all
 ```
 
