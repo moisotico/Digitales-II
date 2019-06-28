@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Mon Jun 24 07:50:07 2019
+[*] Fri Jun 28 02:49:09 2019
 [*]
-[dumpfile] "/home/moi/Documents/Digitales_II/Tarea9/mod_y_pipeline/sumador.vcd"
-[dumpfile_mtime] "Mon Jun 24 07:38:37 2019"
-[dumpfile_size] 21745
-[savefile] "/home/moi/Documents/Digitales_II/Tarea9/mod_y_pipeline/config.gtkw"
+[dumpfile] "/home/moi/Documents/digitales_II/Tareas/Tarea9/mod_y_pipeline/sumador.vcd"
+[dumpfile_mtime] "Fri Jun 28 02:45:23 2019"
+[dumpfile_size] 9704
+[savefile] "/home/moi/Documents/digitales_II/Tareas/Tarea9/mod_y_pipeline/config.gtkw"
 [timestart] 0
-[size] 1853 1016
+[size] 1853 1025
 [pos] -1 -1
-*-13.594015 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-13.594015 6980 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testbench.
 [treeopen] testbench.sumador_con.
 [sst_width] 233
@@ -27,15 +27,19 @@ testbench.sumador_con.reset_L
 testbench.sumador_con.dataA[3:0]
 testbench.sumador_con.dataB[3:0]
 testbench.sumador_con.idx[3:0]
-testbench.sumador_con.pipeline.sum10_d[3:0]
+testbench.sumador_con.pipeline.sum10[3:0]
+@28
+testbench.sumador_con.pipeline.acarreo
 @200
 -Etapa 2
-@29
-testbench.sumador_con.pipeline.acarreo_d
 @22
 testbench.sumador_con.idx_d[3:0]
 testbench.sumador_con.pipeline.data_A_d[3:0]
 testbench.sumador_con.pipeline.data_B_d[3:0]
+@29
+testbench.sumador_con.pipeline.acarreo_d
+@22
+testbench.sumador_con.pipeline.sum10_d[3:0]
 testbench.sumador_con.pipeline.sum30_d[3:0]
 @200
 -Salidas

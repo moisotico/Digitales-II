@@ -56,22 +56,6 @@ module probador(
             dataB <= dataB + 1;
             idx <= idx + 1;
         end
-/*
-        repeat(4) begin
-        @(posedge clk);
-        //count <= count + 1;
-        end
-
-        repeat(2) begin
-        @(posedge clk);
-        enable <= 0;
-        end
-
-        repeat(2) begin
-        @(posedge clk);
-        reset_L <= 0;
-        end   
-*/
         $finish;    
    end
 
